@@ -1,10 +1,15 @@
-import styled from 'styled-components'
+import Link from 'next/link'
+import Head from 'next/head'
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Header from '../components/Header';
 
 export default function Home() {
-  return <Title>My page</Title>
+  return(
+    <div>
+      <Head>
+        <title>Kadmus | Início</title>
+      </Head>
+      <Header/>
+    </div>
+    )
 }
