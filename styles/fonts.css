@@ -1,9 +1,9 @@
 *{
-    font-family: 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Inter';
 }
 
 h1, h2, h3, h4, h5, h6, p, a{
-    font-family: 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
 }
 
@@ -14,16 +14,6 @@ a{
 h1{
     font-size: 48px;
     line-height: 100%;
-}
-
-@media screen and (max-width: 960px){
-    h1{
-        font-size: 64px;
-    }
-
-    h2{
-        font-size: 48px;
-    }
 }
 
 h2{

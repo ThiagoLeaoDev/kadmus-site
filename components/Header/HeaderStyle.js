@@ -31,7 +31,8 @@ export const IconKadmus = styled(Image)`
 
 export const ContainerOptions = styled.div`
   height: 40%;
-  width: 55%;
+  width: 45%;
+  margin-right: 10%;
   max-width: 1000px;
   display: flex;
   flex-direction: row;

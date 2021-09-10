@@ -14,9 +14,9 @@ function Header() {
   return(
     <SC.Tabbar>
       <SC.ContainerLogo>
-          <a>
+          {/* <a>
             <SC.IconKadmus src="/logo.svg" width={100} height={100}/>
-          </a>
+          </a> */}
       </SC.ContainerLogo>
 
       <SC.ContainerHamburger>
