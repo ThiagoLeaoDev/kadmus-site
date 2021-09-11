@@ -74,7 +74,6 @@ export const ButtonHero = styled.button`
   font-weight: bold;
   padding: 10px 20px;
   margin-top: 24px;
-  opacity: 1;
   transition: 0.3s ease;
 
   &:hover{
@@ -109,4 +108,53 @@ export const RocketImage = styled(Image)`
 
 	transform: translatey(0px);
 	animation: float 3s ease-in-out infinite;
+`;
+
+//------------------- Section Services -------------------
+
+export const SectionServices = styled(SectionHero)`
+  background-color: var(--dark-purple);
+`;
+
+export const ContentServices = styled(ContentHero)`
+  z-index: 1;
+  padding-top: 80px;
+  max-width: 1600px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ContainerTextButtonServices = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const TitleServices = styled.h2`
+  font-weight: 900;
+  text-align: center;
+  color: var(--white);
+  max-width: 430px;
+  line-height: 120%;
+`;
+
+export const ButtonServices = styled(ButtonHero)`
+  width: 200px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.5s ease;
+
+  &:hover{
+    cursor: pointer;
+    background-color: var(--pink);
+    transform: translateY(0px);
+  }
+  &:active {
+    transform: translateY(0px);
+  }
 `;

@@ -3,14 +3,12 @@ import styled from "styled-components"
 import Image from 'next/image'
 
 export const Tabbar = styled.header`
-  position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 90px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
 `;
 
 export const ContainerLogo = styled.div`

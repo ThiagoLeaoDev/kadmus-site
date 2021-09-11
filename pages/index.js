@@ -23,7 +23,7 @@ export default function Home() {
       <SC.ContentHome>
         <SC.ShadeLeft/>
           <SC.SectionHero>
-            <Header/>
+            <Header/> 
             <SC.ContentHero>
               <SC.ContainerTextsButton  data-aos="fade-right"  data-aos-duration="2500">
                 <SC.TitleHero>Transforme seu negócio</SC.TitleHero>
@@ -37,6 +37,18 @@ export default function Home() {
               </SC.ContainerRocket>
             </SC.ContentHero>
           </SC.SectionHero>
+
+          <SC.SectionServices>
+            <SC.ContentServices>
+              <SC.ContainerTextButtonServices>
+                <SC.TitleServices>Serviços que ajudarão seu negócio a decolar</SC.TitleServices>
+                <SC.ButtonServices>Visualizar todos
+                  <HiArrowNarrowRight color="white" size="2em"/>
+                </SC.ButtonServices>
+              </SC.ContainerTextButtonServices>
+            </SC.ContentServices>
+          </SC.SectionServices>
+
       </SC.ContentHome>
     </SC.Main>
     )
