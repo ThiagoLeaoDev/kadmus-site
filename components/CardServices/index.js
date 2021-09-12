@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {BiMenu} from "react-icons/bi";
-import {HiArrowNarrowRight} from "react-icons/Hi";
+import {HiArrowNarrowRight} from "react-icons/hi";
 
 import * as SC from "./CardStyle";
 
