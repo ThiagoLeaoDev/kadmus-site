@@ -1,7 +1,7 @@
 import { useState } from 'react'; 
 import { IconContext } from "react-icons";
 import Link from 'next/link'
-import { BiShoppingBag, BiHeart, BiUser, BiSearch, BiMenu, BiX} from "react-icons/bi";
+import {BiMenu, BiX} from "react-icons/bi";
 
 import * as SC from "./HeaderStyle";
 

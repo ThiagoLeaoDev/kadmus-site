@@ -1,4 +1,3 @@
-
 import styled from "styled-components"
 import Image from 'next/image'
 
@@ -6,11 +5,6 @@ export const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-export const ContentHome = styled.div`
-  width: 100vw;
-  align-self: center;
 `;
 
 export const SectionHero = styled.div`
@@ -113,6 +107,8 @@ export const RocketImage = styled(Image)`
 //------------------- Section Services -------------------
 
 export const SectionServices = styled(SectionHero)`
+  width: 100%;
+  height: auto;
   background-color: var(--dark-purple);
 `;
 
@@ -138,7 +134,7 @@ export const TitleServices = styled.h2`
   font-weight: 900;
   text-align: center;
   color: var(--white);
-  max-width: 430px;
+  max-width: 500px;
   line-height: 120%;
 `;
 
@@ -157,4 +153,11 @@ export const ButtonServices = styled(ButtonHero)`
   &:active {
     transform: translateY(0px);
   }
+`;
+export const ContainerCardsServices = styled.div`
+  width: 72%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
 `;
