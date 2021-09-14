@@ -210,3 +210,31 @@ export const DescriptionWAW = styled.h5`
   color: var(--white);
   margin-top: 12px;
 `;
+
+//------------------- Section Jobs -------------------
+
+export const SectionJobs = styled(SectionHero)`
+  height: auto;
+  background: none;
+  background-color: var(--dark-grey);
+`;
+
+export const ContentJobs = styled(ContentHero)`
+  flex-direction: column;
+  padding: 80px 0;
+`;
+
+export const TitleJobs = styled(TitleServices)`
+  width: 82%;
+  max-width: none;
+  font-weight: 900;
+  text-align: left;
+  color: var(--white);
+  line-height: 100%;
+`;
+
+export const ContainerCardsImages = styled(ContainerCardsServices)`
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+`;

@@ -8,7 +8,8 @@ import "aos/dist/aos.css";
 import * as SC from "../styles/HomeStyle";
 
 import Header from '../components/Header';
-import CardServices from '../components/CardServices'
+import CardServices from '../components/CardServices';
+import CardImages from '../components/CardImages';
 
 export default function Home() {
   useEffect(() => { //function for launch the aos library
@@ -46,7 +47,7 @@ export default function Home() {
               <HiArrowNarrowRight color="white" size="2em"/>
             </SC.ButtonServices>
           </SC.ContainerTextButtonServices>
-          <SC.ContainerCardsServices>
+          <SC.ContainerCardsServices data-aos="fade" data-aos-duration="2000">
             <CardServices
               Title="Mobile Application"
               Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
@@ -90,6 +91,18 @@ export default function Home() {
           </SC.ContainerTextsWAW>
         </SC.ContentWhoAreWe>
       </SC.SectionWhoAreWe>
+
+      <SC.SectionJobs>
+        <SC.ContentJobs>
+          <SC.TitleJobs>Selected works</SC.TitleJobs>
+          <SC.ContainerCardsImages>
+            <CardImages/>
+            <CardImages/>
+            <CardImages/>
+            <CardImages/>
+          </SC.ContainerCardsImages>
+        </SC.ContentJobs>
+      </SC.SectionJobs>
     </SC.Main>
     )
 }
