@@ -1,15 +1,24 @@
+import React, { useState } from 'react';
 
 import * as SC from "./CardImagesStyle";
 
-export default function CardImages() {
+export default function CardImages(props) {
+  const [Hover, setHover] = useState(false);
+
   return(
-    <SC.CardImages>
+    <SC.CardImages
+    onMouseEnter={() => setHover(true)}
+    onMouseLeave={() => setHover(false)}>
       <SC.ContainerText>
-        <SC.TitleCard>Byte</SC.TitleCard>
-        <SC.DescCard> - New looping video app</SC.DescCard>
+        <SC.TitleCard>{props.TitleCard}</SC.TitleCard>
+        <SC.DescCard>{props.DescCard}</SC.DescCard>
       </SC.ContainerText>
       <SC.ContainerImage>
-        <SC.ImageCard src="/cell_white.jpeg" layout='fill' objectFit="cover" quality={100}/>
+        <SC.ImageCard src={props.CardImage} layout='fill' objectFit="cover" quality={100}/>
+            <SC.ContainerButton hover={Hover}>
+              <SC.TextHover>{props.HoverTitle}</SC.TextHover>
+              <SC.ButtonHover>Saiba Mais</SC.ButtonHover>
+            </SC.ContainerButton>
       </SC.ContainerImage>
     </SC.CardImages>
   )

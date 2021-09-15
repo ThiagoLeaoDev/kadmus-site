@@ -41,13 +41,13 @@ export default function Home() {
 
       <SC.SectionServices>
         <SC.ContentServices>
-          <SC.ContainerTextButtonServices>
+          <SC.ContainerTextButtonServices  data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
             <SC.TitleServices>Serviços que ajudarão seu negócio a decolar</SC.TitleServices>
             <SC.ButtonServices>Visualizar todos
               <HiArrowNarrowRight color="white" size="2em"/>
             </SC.ButtonServices>
           </SC.ContainerTextButtonServices>
-          <SC.ContainerCardsServices data-aos="fade" data-aos-duration="2000">
+          <SC.ContainerCardsServices data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
             <CardServices
               Title="Mobile Application"
               Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
@@ -95,11 +95,11 @@ export default function Home() {
       <SC.SectionJobs>
         <SC.ContentJobs>
           <SC.TitleJobs>Selected works</SC.TitleJobs>
-          <SC.ContainerCardsImages>
-            <CardImages/>
-            <CardImages/>
-            <CardImages/>
-            <CardImages/>
+          <SC.ContainerCardsImages data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
+            <CardImages CardImage={"/mobile_app.jpeg"} TitleCard={"Byte"} DescCard={"- New looping video app"} HoverTitle={"APP DESIGN"}/>
+            <CardImages CardImage={"/brand_design.jpeg"} TitleCard={"Slideban"} DescCard={"- Pitch deck design"} HoverTitle={"BRAND ORGANIZATION"}/>
+            <CardImages CardImage={"/sistem_dashboard.jpeg"} TitleCard={"Dashkit"} DescCard={"- Track your sales"} HoverTitle={"SISTEM DEVELOPMENT"}/>
+            <CardImages CardImage={"/map_app.jpeg"} TitleCard={"Apple park"} DescCard={"- Augmented reality"} HoverTitle={"APP DEVELOPMENT"}/>
           </SC.ContainerCardsImages>
         </SC.ContentJobs>
       </SC.SectionJobs>
