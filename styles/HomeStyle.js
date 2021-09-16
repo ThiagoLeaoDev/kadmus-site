@@ -5,6 +5,7 @@ export const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden !important;
 `;
 
 export const SectionHero = styled.div`
