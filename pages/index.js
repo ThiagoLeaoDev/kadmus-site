@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
 import Link from 'next/link'
 import Head from 'next/head'
+
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { GrLinkedinOption } from "react-icons/gr";
+import { AiOutlineInstagram, AiOutlineTwitter, AiFillYoutube, AiFillGithub } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -29,9 +32,9 @@ export default function Home() {
           <SC.ContainerTextsButton  data-aos="fade-right"  data-aos-duration="2500">
             <SC.TitleHero>Transforme seu negócio</SC.TitleHero>
             <SC.DescHero>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis auctor tellus. Proin sem lorem, elementum in sem in, viverra maximus enim. Nullam porttitor mollis justo ut eleifend, sed dapibus purus turpis.</SC.DescHero>
-            <SC.ButtonHero>Cadastrar serviços
+            <SC.Button>Cadastrar serviços
               <HiArrowNarrowRight color="white" size="2em"/>
-            </SC.ButtonHero>
+            </SC.Button>
           </SC.ContainerTextsButton>
           <SC.ContainerRocket data-aos="zoom-in-right" data-aos-duration="2000">
             <SC.RocketImage src="/rocket.png" layout='fill' objectFit="cover" quality={100}/>
@@ -79,11 +82,11 @@ export default function Home() {
       <SC.SectionWhoAreWe>
         <SC.ContentWhoAreWe>
           <SC.ContainerCellImage>
-            <SC.ContainerCellWhite data-aos="fade-right" data-aos-duration="1500">
+            <SC.ContainerCellWhite data-aos="fade-left" data-aos-duration="1500">
               <SC.CellWhiteImage src="/cell_white.jpeg" layout='fill' objectFit="cover" quality={100}/>
             </SC.ContainerCellWhite>
           </SC.ContainerCellImage>
-          <SC.ContainerTextsWAW  data-aos="fade-left" data-aos-duration="1500">
+          <SC.ContainerTextsWAW data-aos="fade-right" data-aos-duration="1500">
             <SC.TitleWAW>O que é a Kadmus?</SC.TitleWAW>
             <SC.DescriptionWAW>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.
@@ -109,6 +112,9 @@ export default function Home() {
           <SC.ContainerTextContact  data-aos="fade-left" data-aos-duration="1500">
             <SC.TitleContact>Manage your projects from your mobile</SC.TitleContact>
             <SC.DescriptionContact>Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!</SC.DescriptionContact>
+            <SC.ButtonContact>Enviar e-mail
+              <HiArrowNarrowRight color="white" size="2em"/>
+            </SC.ButtonContact>
           </SC.ContainerTextContact>
           <SC.ContainerContactImage>
             <SC.ContainerCellContact data-aos="fade-right" data-aos-duration="1500">
@@ -117,6 +123,29 @@ export default function Home() {
           </SC.ContainerContactImage>
         </SC.ContentContact>
       </SC.SectionContact>
+      
+      <SC.Footer>
+        <SC.TextBrand>© 2021 Kadmus Enterprise All rights reserved</SC.TextBrand>
+        <SC.ContainerLogo>
+        </SC.ContainerLogo>
+        <SC.ContainerSocial>
+          <SC.CircleIcon>
+            <GrLinkedinOption color="white" size="1.5em"/>
+          </SC.CircleIcon>
+          <SC.CircleIcon>
+            <AiFillGithub color="white" size="1.5em"/>
+          </SC.CircleIcon>
+          <SC.CircleIcon>
+            <AiOutlineInstagram color="white" size="1.5em"/>
+          </SC.CircleIcon>
+          <SC.CircleIcon>
+            <AiOutlineTwitter color="white" size="1.5em"/>
+          </SC.CircleIcon>
+          <SC.CircleIcon>
+            <AiFillYoutube color="white" size="1.5em"/>
+          </SC.CircleIcon>
+        </SC.ContainerSocial>
+      </SC.Footer>
     </SC.Main>
     )
 }

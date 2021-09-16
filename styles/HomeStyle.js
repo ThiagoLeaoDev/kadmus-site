@@ -54,7 +54,7 @@ export const DescHero = styled.h5`
   margin-top: 12px;
 `;
 
-export const ButtonHero = styled.button`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,7 +137,7 @@ export const TitleServices = styled.h2`
   line-height: 120%;
 `;
 
-export const ButtonServices = styled(ButtonHero)`
+export const ButtonServices = styled(Button)`
   width: 200px;
   background-color: transparent;
   color: var(--white);
@@ -209,6 +209,7 @@ export const DescriptionWAW = styled.h5`
   max-width: 500px;
   color: var(--white);
   margin-top: 12px;
+  font-weight: 300;
 `;
 
 //------------------- Section Jobs -------------------
@@ -259,6 +260,11 @@ export const TitleContact = styled(TitleWAW)`
 `;
 
 export const DescriptionContact = styled(DescriptionWAW)`
+  margin-bottom: 40px;
+`;
+
+export const ButtonContact = styled(Button)`
+  width: 180px;
 `;
 
 export const ContainerContactImage = styled(ContainerCellImage)`
@@ -271,3 +277,48 @@ export const ContainerCellContact = styled(ContainerCellWhite)`
 export const CellContact = styled(Image)`
   border-radius: 5px;
 `;
+
+//------------------- Section Contact -------------------
+
+export const Footer = styled.footer`
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--black);
+`;
+
+export const TextBrand = styled.h6`
+  color: var(--white);
+  font-weight: 300;
+`;
+
+export const ContainerLogo = styled.div`
+  width: 40%;
+`;
+
+export const ContainerSocial = styled.div`
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CircleIcon = styled.a`
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: var(--grey);
+  margin: 0 10px;
+  transition: 0.5s ease;
+
+  &:hover{
+    cursor: pointer;
+    background-color: var(--pink);
+  }
+`;
+
