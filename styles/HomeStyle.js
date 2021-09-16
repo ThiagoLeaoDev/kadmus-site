@@ -108,7 +108,7 @@ export const RocketImage = styled(Image)`
 export const SectionServices = styled(SectionHero)`
   height: auto;
   background: none;
-  background-color: var(--dark-purple);
+  background-color: var(--dark-blue);
 `;
 
 export const ContentServices = styled(ContentHero)`
@@ -237,4 +237,37 @@ export const ContainerCardsImages = styled(ContainerCardsServices)`
   width: 100%;
   align-items: center;
   justify-content: space-around;
+`;
+
+//------------------- Section Contact -------------------
+
+
+export const SectionContact = styled(SectionWhoAreWe)`
+  background-color: var(--dark-blue);
+`;
+
+export const ContentContact = styled(ContentWhoAreWe)`
+  padding: 0;
+`;
+
+export const ContainerTextContact = styled(ContainerTextsWAW)`
+  justify-content: flex-end;
+`;
+
+export const TitleContact = styled(TitleWAW)`
+  max-width: 350px;
+`;
+
+export const DescriptionContact = styled(DescriptionWAW)`
+`;
+
+export const ContainerContactImage = styled(ContainerCellImage)`
+`;
+
+export const ContainerCellContact = styled(ContainerCellWhite)`
+  width: 560px;
+`;
+
+export const CellContact = styled(Image)`
+  border-radius: 5px;
 `;

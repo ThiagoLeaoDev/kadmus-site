@@ -103,6 +103,20 @@ export default function Home() {
           </SC.ContainerCardsImages>
         </SC.ContentJobs>
       </SC.SectionJobs>
+
+      <SC.SectionContact>
+        <SC.ContentContact>
+          <SC.ContainerTextContact  data-aos="fade-left" data-aos-duration="1500">
+            <SC.TitleContact>Manage your projects from your mobile</SC.TitleContact>
+            <SC.DescriptionContact>Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!</SC.DescriptionContact>
+          </SC.ContainerTextContact>
+          <SC.ContainerContactImage>
+            <SC.ContainerCellContact data-aos="fade-right" data-aos-duration="1500">
+              <SC.CellContact src="/two_phones.jpeg" layout='fill' objectFit="cover" quality={100}/>
+            </SC.ContainerCellContact>
+          </SC.ContainerContactImage>
+        </SC.ContentContact>
+      </SC.SectionContact>
     </SC.Main>
     )
 }
