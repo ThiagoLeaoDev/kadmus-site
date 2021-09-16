@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <title>Kadmus | Início</title>
       </Head>
-      <SC.ShadeLeft/>
+      {/* <SC.ShadeLeft/> */}
       <SC.SectionHero>
         <Header/> 
         <SC.ContentHero>
@@ -82,11 +82,11 @@ export default function Home() {
       <SC.SectionWhoAreWe>
         <SC.ContentWhoAreWe>
           <SC.ContainerCellImage>
-            <SC.ContainerCellWhite data-aos="fade-left" data-aos-duration="1500">
+            <SC.ContainerCellWhite data-aos="fade-right" data-aos-duration="1500">
               <SC.CellWhiteImage src="/cell_white.jpeg" layout='fill' objectFit="cover" quality={100}/>
             </SC.ContainerCellWhite>
           </SC.ContainerCellImage>
-          <SC.ContainerTextsWAW data-aos="fade-right" data-aos-duration="1500">
+          <SC.ContainerTextsWAW data-aos="fade-left" data-aos-duration="1500">
             <SC.TitleWAW>O que é a Kadmus?</SC.TitleWAW>
             <SC.DescriptionWAW>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.

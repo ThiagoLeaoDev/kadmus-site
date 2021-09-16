@@ -14,6 +14,11 @@ export const SectionHero = styled.div`
   flex-direction: column;
   align-items: center;
   background: linear-gradient(194.01deg, #130139 9.6%, #2B145C 89.64%);
+
+  @media(max-width: 992px) {
+    height: auto;
+    padding-bottom: 40px;
+  }
 `;
 
 export const ShadeLeft = styled.div`
@@ -35,11 +40,21 @@ export const ContentHero = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  
+  @media(max-width: 992px) {
+    flex-direction: column-reverse;
+    padding-top: 10px;
+  }
 `;
 
 export const ContainerTextsButton = styled.div`
   width: 50%;
   padding-left: 50px;
+
+  @media(max-width: 992px) {
+    width: 80%;
+    padding: 0 20px;
+  }
 `;
 
 export const TitleHero = styled.h1`
@@ -47,6 +62,10 @@ export const TitleHero = styled.h1`
   color: var(--white);
   max-width: 300px;
   line-height: 130%;
+
+  @media(max-width: 992px) {
+    max-width: none;
+  }
 `;
 
 export const DescHero = styled.h5`
@@ -83,6 +102,12 @@ export const ContainerRocket = styled.div`
   width: 50%;
   height: 100%;
   padding-right: 50px;
+
+  @media(max-width: 992px) {
+    height: 80vw;
+    max-height: 500px;
+    width: 80%;
+  }
 `;
 
 
@@ -127,6 +152,10 @@ export const ContainerTextButtonServices = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media(max-width: 992px) {
+    width: 80%;
+  }
 `;
 
 export const TitleServices = styled.h2`
@@ -135,6 +164,10 @@ export const TitleServices = styled.h2`
   color: var(--white);
   max-width: 500px;
   line-height: 120%;
+
+  @media(max-width: 992px) {
+    max-width: none;
+  }
 `;
 
 export const ButtonServices = styled(Button)`
@@ -159,6 +192,10 @@ export const ContainerCardsServices = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 24px;
+
+  @media(max-width: 992px) {
+    width: 80%;
+  }
 `;
 
 //------------------- Section Who are We -------------------
@@ -171,6 +208,10 @@ export const SectionWhoAreWe = styled(SectionHero)`
 
 export const ContentWhoAreWe = styled(ContentHero)`
   padding: 80px 0;
+
+  @media(max-width: 992px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContainerCellImage = styled.div`
@@ -180,12 +221,17 @@ export const ContainerCellImage = styled.div`
   margin-left: 40px;
   display: flex;
   justify-content: flex-end;
+
+  @media(max-width: 992px) {
+    width: 80%;
+    height: 70vw;
+  }
 `;
 
 export const ContainerCellWhite = styled.div`
   position: relative;
-  width: 500px;
-  height: 530px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const CellWhiteImage = styled(Image)`
@@ -196,6 +242,11 @@ export const ContainerTextsWAW = styled(ContainerTextsButton)`
   width: 50%;
   padding-left: 50px;
   margin-right: 40px;
+
+  @media(max-width: 992px) {
+    width: 80%;
+    margin-top: 32px;
+  }
 `;
 
 
@@ -232,6 +283,10 @@ export const TitleJobs = styled(TitleServices)`
   text-align: left;
   color: var(--white);
   line-height: 100%;
+
+  @media(max-width: 992px) {
+    text-align: center;
+  }
 `;
 
 export const ContainerCardsImages = styled(ContainerCardsServices)`
@@ -245,6 +300,7 @@ export const ContainerCardsImages = styled(ContainerCardsServices)`
 
 export const SectionContact = styled(SectionWhoAreWe)`
   background-color: var(--dark-blue);
+  padding-bottom: 0;
 `;
 
 export const ContentContact = styled(ContentWhoAreWe)`
@@ -257,14 +313,25 @@ export const ContainerTextContact = styled(ContainerTextsWAW)`
 
 export const TitleContact = styled(TitleWAW)`
   max-width: 350px;
+
+  @media(max-width: 992px) {
+    max-width: none;
+  }
 `;
 
 export const DescriptionContact = styled(DescriptionWAW)`
   margin-bottom: 40px;
+  @media(max-width: 992px) {
+    max-width: none;
+  }
 `;
 
 export const ButtonContact = styled(Button)`
   width: 180px;
+
+  @media(max-width: 992px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const ContainerContactImage = styled(ContainerCellImage)`
@@ -278,7 +345,7 @@ export const CellContact = styled(Image)`
   border-radius: 5px;
 `;
 
-//------------------- Section Contact -------------------
+//------------------- Section Footer -------------------
 
 export const Footer = styled.footer`
   width: 100%;
@@ -288,6 +355,11 @@ export const Footer = styled.footer`
   justify-content: space-around;
   align-items: center;
   background-color: var(--black);
+
+  @media(max-width: 992px) {
+    flex-direction: column;
+    padding: 10px 0;
+  }
 `;
 
 export const TextBrand = styled.h6`
@@ -305,6 +377,10 @@ export const ContainerSocial = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media(max-width: 992px) {
+    width: 80%;
+  }
 `;
 
 export const CircleIcon = styled.a`

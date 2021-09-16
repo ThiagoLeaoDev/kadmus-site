@@ -12,6 +12,10 @@ export const Card = styled.div`
   padding: 40px 34px;
   color: var(--white);
 
+  @media(max-width: 576px) {
+    width: 400px;
+  }
+
   &:hover{
     cursor: pointer;
     transform: translateY(-4px);
@@ -24,6 +28,15 @@ export const Card = styled.div`
 export const Title = styled.h4`
   font-weight: bold;
   margin-top: 44px;
+
+  @media(max-width: 992px) {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  @media(max-width: 400px) {
+    margin-top: 0px;
+  }
 `;
 
 export const Desc = styled.h6`

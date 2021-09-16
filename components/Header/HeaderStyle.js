@@ -9,6 +9,11 @@ export const Tabbar = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1007px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 export const ContainerLogo = styled.div`
@@ -21,6 +26,8 @@ export const ContainerHamburger = styled.div`
   cursor: pointer;
   @media (max-width: 1007px) {
     display: block;
+    padding-top: 30px;
+    margin-right: -70%;
   }
 `;
 
@@ -39,15 +46,10 @@ export const ContainerOptions = styled.div`
 
   @media (max-width: 1007px) {
     display: ${props => props.open ? "none" : "block"};
-    position: absolute;
-    width: 28%;
-    min-width: 200px;
+    width: 100%;
+    margin-right: 0;
     height: auto;
     flex-direction: column;
-    background-color: var(--black);
-    top: 90px;
-    right: 0;
-    border-bottom-left-radius: 6px;
   }
 `;
 
@@ -58,7 +60,6 @@ export const TabOption = styled.a`
   cursor: pointer;
   @media (max-width: 1007px) {
     height: 60px;
-    border-top: 2px solid #2f2f30;
     justify-content: space-around;
   }
 `;
