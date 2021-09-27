@@ -11,7 +11,7 @@ export default function CardServices(props) {
       <SC.Title>{props.Title}</SC.Title>
       <SC.Desc>{props.Desc}</SC.Desc>
       <SC.ContainerCTA>
-        <SC.TextCTA>Explore</SC.TextCTA>
+        <SC.TextCTA>Saiba mais</SC.TextCTA> {/* Não sei se vai manter, senão vai ser necessário a criação de cards maiores que explciarão os serviços*/}
         <HiArrowNarrowRight color="white" size="1.5em"/>
       </SC.ContainerCTA>
     </SC.Card>
