@@ -31,7 +31,7 @@ export default function Home() {
         <SC.ContentHero>
           <SC.ContainerTextsButton  data-aos="fade-right"  data-aos-duration="2500">
             <SC.TitleHero>Transforme seu negócio</SC.TitleHero>
-            <SC.DescHero>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis auctor tellus. Proin sem lorem, elementum in sem in, viverra maximus enim. Nullam porttitor mollis justo ut eleifend, sed dapibus purus turpis.</SC.DescHero>
+            <SC.DescHero>Agência especializada em desenvolvimento de software, nosso foco é o aumento das suas vendas e lucratividade, através da tecnologia. </SC.DescHero>
             <SC.Button>Cadastrar serviços
               <HiArrowNarrowRight color="white" size="2em"/>
             </SC.Button>
@@ -46,34 +46,34 @@ export default function Home() {
         <SC.ContentServices>
           <SC.ContainerTextButtonServices  data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
             <SC.TitleServices>Serviços que ajudarão seu negócio a decolar</SC.TitleServices>
-            <SC.ButtonServices>Visualizar todos
+            <SC.ButtonServices>Visualizar todos {/* Remover este botão */}
               <HiArrowNarrowRight color="white" size="2em"/>
             </SC.ButtonServices>
           </SC.ContainerTextButtonServices>
           <SC.ContainerCardsServices data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
             <CardServices
-              Title="Mobile Application"
-              Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
+              Title="Criação de Aplicativos - APP's"
+              Desc="Criação de aplicativos para iPhone e Android. Desenvolvimento sob medida."
             />
             <CardServices
-              Title="Web Application"
-              Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
+              Title="Criação de Sites"
+              Desc="Sites responsivos, com navegação intuitiva e design profissional. Site com foco em geração de resultados."
             />
             <CardServices
-              Title="User Interface Design"
-              Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
+              Title="UX Design e UI Design"
+              Desc="Usabilidade que  traz resultados incríveis na forma como os consumidores e marcas irão interagir com você."
             />
             <CardServices
-              Title="Strategy and Branding"
-              Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
+              Title="Lojas Virtuais - E-commerce"
+              Desc="Criação de lojas com alta performance. gestão de pedidos, integração com cartões de crédito, boletos, etc."
             />
             <CardServices
-              Title="Performance Marketing"
-              Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
+              Title="Landing Pages"
+              Desc="Desenvolvimento de páginas estratégicas para alavancar o potencial da sua empresa, produtos e serviços oferecidos."
             />
             <CardServices
-              Title="Project Management"
-              Desc="Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat."
+              Title="Otimização de Sites (SEO)"
+              Desc="Aumentar a visibilidade do seu site através de estratégias que geram mais tráfego, portanto, mais negócios."
             />
           </SC.ContainerCardsServices>
         </SC.ContentServices>
@@ -88,8 +88,8 @@ export default function Home() {
           </SC.ContainerCellImage>
           <SC.ContainerTextsWAW data-aos="fade-left" data-aos-duration="1500">
             <SC.TitleWAW>O que é a Kadmus?</SC.TitleWAW>
-            <SC.DescriptionWAW>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.
+            <SC.DescriptionWAW>Nosso maior desafio é materializar boas ideias em soluções de sucesso - práticas e simples, com foco total no aumento das suas vendas e lucratividade. 
+              Nosso time é capaz de gerar resultados mensuráveis aos nossos clientes. Oferecemos design moderno com tecnologia de ponta. Atenção total ao seu posicionamento no Google e performance em dispositivos mobile.
             </SC.DescriptionWAW>
           </SC.ContainerTextsWAW>
         </SC.ContentWhoAreWe>
@@ -97,7 +97,7 @@ export default function Home() {
 
       <SC.SectionJobs>
         <SC.ContentJobs>
-          <SC.TitleJobs>Selected works</SC.TitleJobs>
+          <SC.TitleJobs>Portfólio</SC.TitleJobs>
           <SC.ContainerCardsImages data-aos="fade-up" data-aos-delay="300" data-aos-duration="2500">
             <CardImages CardImage={"/mobile_app.jpeg"} TitleCard={"Byte"} DescCard={"- New looping video app"} HoverTitle={"APP DESIGN"}/>
             <CardImages CardImage={"/brand_design.jpeg"} TitleCard={"Slideban"} DescCard={"- Pitch deck design"} HoverTitle={"BRAND ORGANIZATION"}/>
@@ -110,9 +110,9 @@ export default function Home() {
       <SC.SectionContact>
         <SC.ContentContact>
           <SC.ContainerTextContact  data-aos="fade-left" data-aos-duration="1500">
-            <SC.TitleContact>Manage your projects from your mobile</SC.TitleContact>
-            <SC.DescriptionContact>Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!</SC.DescriptionContact>
-            <SC.ButtonContact>Enviar e-mail
+            <SC.TitleContact>Requisite um orçamento sem compromisso</SC.TitleContact>
+            <SC.DescriptionContact>Preencha o formulário para que possamos avaliar a melhor maneira de lhe ajudar, responderemos em até 1 dia útil.</SC.DescriptionContact>
+            <SC.ButtonContact>Ir para formulário
               <HiArrowNarrowRight color="white" size="2em"/>
             </SC.ButtonContact>
           </SC.ContainerTextContact>
@@ -125,7 +125,7 @@ export default function Home() {
       </SC.SectionContact>
       
       <SC.Footer>
-        <SC.TextBrand>© 2021 Kadmus Enterprise All rights reserved</SC.TextBrand>
+        <SC.TextBrand>©2022 Agência Kadmus. Todos os direitos reservados.</SC.TextBrand>
         <SC.ContainerLogo>
         </SC.ContainerLogo>
         <SC.ContainerSocial>
